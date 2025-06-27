@@ -25,7 +25,7 @@ Este projeto consiste em uma **landing page institucional** para a Barbearia Imp
 - Uso profissional de versionamento Git
 
 ## 📁 Estrutura do Projeto
-
+```
 src/
 │
 ├── app/
@@ -37,7 +37,7 @@ src/
 |  ├── images
 ├── environments/
 └── index.html
-
+```
 
 ## 🔗 Deploy
 
