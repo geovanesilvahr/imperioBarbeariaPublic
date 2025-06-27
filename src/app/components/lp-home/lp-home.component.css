@@ -1,0 +1,377 @@
+/* Geral */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(21, 21, 21);
+}
+  
+
+
+/* Header and Intro/Agendar */
+.first_block {
+    display: flex;
+    flex-direction: column;
+    background-image: url("/assets/images/background_header.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo {
+    height: 80px;
+    margin-left: 80px;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+}
+
+.option {
+    display: flex;
+    padding: 30px;
+    margin-right: 40px;
+    color: #F9BD23;
+    font-family: "Anton", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.option:hover {
+    transform: scale(1.4, 1.4);
+    text-decoration: underline;
+}
+
+.home_agendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-self: center;
+    height: 100vh;
+}
+
+.lb_titulo {
+    color: white;
+    font-family: "Anton", sans-serif;
+    font-weight: 500;
+    font-size: 100px;
+    margin-bottom: 100px;
+}
+
+.bt_agendar {
+    height: 67px;
+    width: 230px;
+    border-radius: 10px;
+    background-color: #F9BD23;
+    font-size: 23px;
+    color: aliceblue;
+    align-content: center;
+    text-decoration: none;
+}
+
+.bt_agendar:hover {
+    transform: scale(1.05);
+}
+
+/* Sobre */
+.sobre {
+    height: 900px;
+    background-color: rgb(21, 21, 21);
+    display: flex;
+    flex-direction: row;
+    padding: 125px;
+    align-items: center;
+    justify-content: center;
+}
+
+.textos {
+    color: white;
+    max-width: 650px;
+}
+
+.titulos {
+    color: #F9BD23;
+    font-size: 60px;
+    margin-bottom: 4rem;
+    line-height: normal;
+    font-family: "Anton", sans-serif;
+}
+
+.lb_sobre {
+    font-size: 25px;
+    line-height: normal;
+    margin-bottom: 140px;
+    font-family: sans-serif;
+}
+
+.images {
+    height: 700px;
+    margin-left: 100px;
+}
+
+.saibaMais {
+    display: flex;
+    font-family: "Anton", sans-serif;
+    color: #F9BD23;
+    font-size: 25px;
+    margin-top: 2rem;
+}
+
+.saibaMais:hover {
+    color: aliceblue;
+}
+
+/*  Serviços  */
+.serviços {
+    background-color: rgb(21, 21, 21);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img_servicos {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+
+.lb_servicos {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.titulo_servicos {
+    color: #F9BD23;
+    font-size: 60px;
+    margin-bottom: 1rem;
+    line-height: normal;
+    font-family: "Anton", sans-serif;
+}
+
+.images_servico {
+    height: 500px;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.images_servico:hover {
+    transform: scale(1.04);
+}
+
+/*  Galeria  */
+
+.galeria {
+    background-color: rgb(21, 21, 21);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 30px 200px 30px;
+
+}
+
+.img_galeria {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.images_galeria {
+    height: 400px;
+    max-height: 500px;
+    padding: 15px;
+}
+
+.images_galeria:hover {
+    transform: scale(1.04);
+}
+
+/*  Contato  */
+.contato {
+    height: 400px;
+    background-image: url("/assets/images/background_footer.jpg");
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    background-color: #F9BD23;
+    padding: 6rem;
+    justify-content: space-around;
+}
+
+.foot {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    gap: 1.5rem;
+}
+
+
+.titulo_footer {
+    font-family: "Anton", sans-serif;
+}
+
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .logo {
+        height: 60px;
+        margin-left: 40px;
+    }
+
+    .option {
+        padding: 20px;
+        margin-right: 20px;
+        font-size: 18px;
+    }
+
+    .lb_titulo {
+        font-size: 80px;
+        margin-bottom: 80px;
+    }
+
+    .bt_agendar {
+        font-size: 20px;
+    }
+
+    .titulos {
+        font-size: 50px;
+    }
+
+    .lb_sobre {
+        font-size: 22px;
+        margin-bottom: 80px;
+    }
+
+    .images {
+        height: 600px;
+        margin-left: 50px;
+    }
+
+    .img_servicos{
+        flex-direction: column;
+    }
+
+    .saibaMais {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        height: 80px;
+        margin: 20px 0;
+    }
+
+    .options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .option {
+        padding: 15px;
+        margin-right: 0;
+        font-size: 16px;
+    }
+
+    .lb_titulo {
+        font-size: 60px;
+        margin-bottom: 60px;
+    }
+
+    .bt_agendar {
+        font-size: 18px;
+        width: 200px;
+    }
+
+    .sobre {
+        flex-direction: column;
+        padding: 50px;
+        height: auto;
+    }
+
+    .textos {
+        text-align: center;
+    }
+
+    .titulos {
+        font-size: 40px;
+    }
+
+    .lb_sobre {
+        font-size: 20px;
+        margin-bottom: 60px;
+    }
+
+    .images {
+        height: 400px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .saibaMais {
+        font-size: 20px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .lb_titulo {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+
+    .bt_agendar {
+        font-size: 16px;
+        width: 180px;
+    }
+
+    .titulos {
+        font-size: 30px;
+    }
+
+    .lb_sobre {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .images {
+        height: 300px;
+    }
+
+    .saibaMais {
+        font-size: 18px;
+        justify-content: center;
+    }
+
+    .img_servicos {
+        flex-direction: column;
+    }
+
+}

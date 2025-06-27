@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "imperiobarbearia-10": {
+      "hosting": {
+        "imperiobarbearia": [
+          "imperiobarbearia-10"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "imperiobarbearia-10"
+  }
+}
